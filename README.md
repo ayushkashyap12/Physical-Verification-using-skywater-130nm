@@ -14,14 +14,13 @@ Physical Verification using skywater 130nm
           -  [Part 3:Layout using Magic](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-3-Layout-using-Magic)
           -  [Part 4:LVS using netgen](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-4-LVS-using-netgen)
       
-      
-      
-      
-      
-      
-      
-      
-      
+      -  [Day 2 -Introduction to DRC and LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Introduction-to-DRC-and-LVS)
+           -  [Part 1- GDS Read](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-1-GDS-Read)
+           -  [Part 2- PORTS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-2-PORTS)
+           -  [Part 3- ABSTRACT VIEW](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-3-ABSTRACT-VIEW)
+           -  [Part 4- BASIC EXTRACTION](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-4-BASIC-EXTRACTION)
+           -  [Part 5-SETUP FOR DRC](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-5-SETUP-FOR-DRC)
+           -  [Part 6-SETUP FOR LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-6-SETUP-FOR-LVS)
       
       
       
@@ -113,8 +112,72 @@ Physical Verification using skywater 130nm
    The basic example was taken to explain the use of this tool.
    ![D5_l2_result_lvs](https://user-images.githubusercontent.com/92054999/195919690-6c05e7a1-73c7-4c2f-8fcc-a0374966ece3.PNG)
 
+  #  Day 2 -Introduction to DRC and LVS
+   ## Part 1- GDS Read
+    The following code was used to read the gds file:
+    ```
+    mkdir lab_2
+   cd lab_2
+   mkdir mag
+   cd mag
+   cp /usr/share/pdk/sky130A/libs.tech/magic/sky130A.magicrc ./.magicrc
+   magic -d XR
+   ```
+   ![D2_L1](https://user-images.githubusercontent.com/92054999/195922788-d0e87174-89d4-4aed-bb26-97dab84b36b4.PNG)
+   After the console
+   ![d2_l2](https://user-images.githubusercontent.com/92054999/195923497-380b3870-db4c-4e4f-a065-87cb620a97d0.PNG)
+   Go to options-->cell manager --> Top down list and select aky130_fd_sc_hd_and2_1 i.e two input and gate to analyze the layout.
+   ![d2_l3](https://user-images.githubusercontent.com/92054999/195924393-22509331-49d1-4154-bc61-ef5ce4a3d40b.PNG)
    
-     
+   ## Part 2- PORTS
+    To see check ports in the layout.
+   ![d2_l4_ports](https://user-images.githubusercontent.com/92054999/195925779-196adffe-db55-4b67-a9a4-74533baa03b2.PNG)
+   ## Part 3- ABSTRACT VIEW
+    The abstract view can be seen in magic tool
+
+   ![d2_l7_abstract](https://user-images.githubusercontent.com/92054999/195926940-976c2a88-4aff-44f1-aca6-d1c0737b819b.PNG)
+   ## Part 4- BASIC EXTRACTION
+    The code shown below was used:
+    ```
+    magic -d XR
+    load sky130_fd_sc_hd__and2_1
+    extract all
+    ext2spice lvs
+    ext2spice
+    ext2spice cthresh 0
+    ext2spice
+
+    ```
+    The result obtained is shown below:
+    ![d2_I8_extraction](https://user-images.githubusercontent.com/92054999/195927407-181e30b1-91a6-47c5-b938-ecd213d40518.PNG)
+ 
+    
+   ## Part 5-SETUP FOR DRC
+    The  below code was used
+   ```
+   /usr/share/pdk/sky130A/libs.tech/magic/run_standard_drc.py /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/mag/sky130_fd_sc_hd__and2_1.mag
+   magic -d XR
+  load sky130_fd_sc_hd__and2_1
+  
+  ```
+   ![d2_I8_DRC](https://user-images.githubusercontent.com/92054999/195927786-5f407cfa-0996-4a75-84a0-e04b91569fd5.PNG)
+   
+   ## Part 6-SETUP FOR LVS
+     The  below code was used
+   ```
+   mkdir netgen 
+   cd netgen
+   cp /usr/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl ./setup.tcl
+   cd ../mag
+   magic -d XR sky130_fd_sc_hd__and2_1
+   
+   ```
+   The results of LVS is shown below:
+   ![d2_I8_lvs](https://user-images.githubusercontent.com/92054999/195928388-48d2a08e-d638-40d6-a742-3957f5d86722.PNG)
+ 
+   ![d2_lvs result](https://user-images.githubusercontent.com/92054999/195928450-9a0c14a4-1ef1-4318-a273-6e47fbeedc7a.PNG)
+
+
 
     
      
