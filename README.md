@@ -24,8 +24,10 @@ Physical Verification using skywater 130nm
       
       -  [Day 3 -Design rule check ](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Day-3-Design-rule-check)
       
-      
-      
+           - [Part 1- Fabrication process](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-1-Fabrication-process)
+           - [Part 2- DEVICE RULE](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-2-DEVICE-RULE)
+           - [Part 3- LATCH UP RULE](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-3-LATCH-UP-RULE)
+           - [Part 4- DENSITY RULE CHECK](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-4-DENSITY-RULE-CHECK)
       
       
       
@@ -213,19 +215,26 @@ Physical Verification using skywater 130nm
        It Gives the minimum and maximum areas for a metal layer and the below snippet shows the same.
         ![d3_l9](https://user-images.githubusercontent.com/92054999/195973450-63db2c12-b096-439c-aec3-a819e07e9893.PNG)
         
-     ## Part 3- DEVICE RULE
+     ## Part 2- DEVICE RULE
      
         Resistors
          Resistors can be made out of diffusion layers, polysilicon layers or p-well regions deep inside n-wells.
          
         Capacitors
          There are different types i.e Varactor, MOSCAP, MiM and Vertical Parallel plate (VPP) or MoM.  MiM is mostly used and  has a very high capacitance.
-          Note:Aspect ratio regulations, bottom and top layer regulations, and antenna regulations are all applicable to MiMs
+          Note:Aspect ratio regulations, bottom and top layer regulations, and antenna regulations are all applicable to MiMs.
           
         Diodes
          Diodes can be formed by a well and a diffusion layer.
          ![d3_I10](https://user-images.githubusercontent.com/92054999/195974863-91b690d0-103a-4f19-8c61-c9c110c1560b.PNG)
+         
+     ## Part 3- LATCH UP RULE
+     Latch-up rules :due to parasitic bipolar transistor formed between taps, wells and substrate - the rules will generate minim distance between tap connection and                        any diffusion zone.
+     ![d3_i12_latchup](https://user-images.githubusercontent.com/92054999/195979446-210342cf-a096-456d-99b7-71b4e63fde25.PNG)
 
-        
+     ## Part 4- DENSITY RULE CHECK
+     To reduce bumpiness of the surface after oxide growth and polishing, we place metal layers and in between them add some 'fill metals', so the surface after polishing is evenly smooth.
+        ![d3_I14_density](https://user-images.githubusercontent.com/92054999/195979486-a1562c0e-8cb2-4c93-ae1d-a0ea37513296.PNG) 
+        ![d3_I13_densityres](https://user-images.githubusercontent.com/92054999/195979498-9c9188a5-2871-4d74-8c2f-8064a2a5467b.PNG)
 
      
