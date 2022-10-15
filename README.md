@@ -278,13 +278,13 @@ Physical Verification using skywater 130nm
        The following results were obtained:
           ![D5_l2_result_lvs](https://user-images.githubusercontent.com/92054999/195981288-76b6ad57-a42e-4f38-827a-f123c73fef3a.PNG)
            
-     ## Part 2-LVS with subcircuits and blackboxes
+     ## Part 3-LVS with subcircuits and blackboxes
      
        To overcome writing lengthy command every time, we can actually create a bash script for the same
           ![d5_l3_subckt](https://user-images.githubusercontent.com/92054999/195981312-9e2ade40-d417-4014-9605-4dedc1cacd03.PNG)
           ![d5_l5_splowlevel](https://user-images.githubusercontent.com/92054999/195981524-3099d2eb-9568-4271-947d-cc2647353c44.PNG)
                 
-     ## Part 3-LVS with Analog block
+     ## Part 4-LVS with Analog block
      
        Power-On Reset- Every time power is applied to a certain electrical device, a power-on-reset circuit generates resetting signals. By doing so, you can                    identify a known state in which the device always turns on or activates.
           ![d5_l11_analog](https://user-images.githubusercontent.com/92054999/195986957-da03ca81-cc5d-46f7-b233-be488fc20f38.PNG)
