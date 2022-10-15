@@ -22,7 +22,7 @@ Physical Verification using skywater 130nm
            -  [Part 5-SETUP FOR DRC](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-5-SETUP-FOR-DRC)
            -  [Part 6-SETUP FOR LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-6-SETUP-FOR-LVS)
       
-      
+      -  [Day 3 -Design rule check ](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Day-3-Design-rule-check)
       
       
       
@@ -176,8 +176,42 @@ Physical Verification using skywater 130nm
    ![d2_I8_lvs](https://user-images.githubusercontent.com/92054999/195928388-48d2a08e-d638-40d6-a742-3957f5d86722.PNG)
  
    ![d2_lvs result](https://user-images.githubusercontent.com/92054999/195928450-9a0c14a4-1ef1-4318-a273-6e47fbeedc7a.PNG)
-
-
-
+   
+   # Day 3 -Design rule check
+   on the third day , the fabrication process was studied and detailed study about design rule check(DRC) was analyzed.
+   
+    ## Part 1- Fabrication process
+      Silicon manufacturing process is mostly  a planar process and the layers are added onto or implanted into other layers.
+      Masks - These are placed on our various layers and the photoresist is broken down. Now the ion implantation or acid etching can be carried out through the space created.
+    ![u1](https://user-images.githubusercontent.com/92054999/195971303-9c17ef33-292b-45c9-9c9b-984b72703064.PNG)
     
+    As the spacing is reduced the probability of failure increases exponentially!
+
+    DRC is all about  minimum spacing to get a good process yield, if we space it wider than that, the process yield gets better, but more space is consumed and depends on what we want .
+
+    The link of  DRC documentation of Skywater PDK is given below -
+
+    https://skywater-pdk--136.org.readthedocs.build/en/136/rules.html
+    
+    ![u2](https://user-images.githubusercontent.com/92054999/195971738-8467c4ce-90d9-4496-b84c-2865560516b0.PNG)
+
+    ## Part 2- Metal Layer rule
+     The file from the pdk was Installed at the specific folder,which is mentioned below:
+       ![d3_l1_cloning](https://user-images.githubusercontent.com/92054999/195972090-f9a2a739-45ca-46ab-9750-24634da562c7.PN
+
+     Wide-spacing rule
+      If one piece of the structure is wider than a given width, other wires of any width must be spaced apart at a greater distance.
+      Basically, Metals >3 microns trigger widespacing rule in SKY130.
+      Below figure is attached to explain the metal spacing rule.
+      ![d3_l3_drc](https://user-images.githubusercontent.com/92054999/195973308-a5027092-1330-4271-aa73-67d4c4969c1c.PNG)
+
+     Notch rule
+       Notch rule is associated with a fork geometry.The notch rule snippet is attached below:
+        ![d3_l5](https://user-images.githubusercontent.com/92054999/195973372-9bb20a6c-acf7-4fac-855b-4e5cd2d0608f.PNG)
+        ![d3_l2_drc](https://user-images.githubusercontent.com/92054999/195972794-d0192bbd-3591-43e1-a63a-2d1b6e876d59.PNG)
+      Minimum and maximum area rules
+       It Gives the minimum and maximum areas for a metal layer and the below snippet shows the same.
+        ![d3_l9](https://user-images.githubusercontent.com/92054999/195973450-63db2c12-b096-439c-aec3-a819e07e9893.PNG)
+        
+
      
