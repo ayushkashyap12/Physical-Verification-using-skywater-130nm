@@ -272,8 +272,8 @@ Physical Verification using skywater 130nm
           ![d5_l16_standcell](https://user-images.githubusercontent.com/92054999/195999350-55f8be7b-5118-4928-81c9-ed38d031492f.PNG)
           
     # REFERENCES
-      - http://opencircuitdesign.com/
-      - https://www.skywatertechnology.com/
-      - https://vsdiat.com/
+      - [http://opencircuitdesign.com/](http://opencircuitdesign.com/)
+      - [https://github.com/The-OpenROAD-Project/OpenLane](https://github.com/The-OpenROAD-Project/OpenLane)
+      - [https://vsdiat.com/](https://vsdiat.com/)
 
 
