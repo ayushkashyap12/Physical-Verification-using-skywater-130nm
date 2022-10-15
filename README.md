@@ -244,7 +244,7 @@ Physical Verification using skywater 130nm
          ![d5_l1_starting_gitclone](https://user-images.githubusercontent.com/92054999/195980403-13293ee1-83ff-47cd-bb0a-77aa25eca79e.PNG)
      ## Part 2- Introduction-Fundamentals of LVS
      
-       The designer does both LVS and DRC before tapeout and the netlists produced by each of the processes is compared with each other and matched. After tapeout, its send to the foundry, where it does DRC again before final processes.
+       The designer does both LVS and DRC before tapeout and the netlists produced by each of the processes is compared with each other and matched. After tapeout, its        send to the foundry, where it does DRC again before final processes.
        Basically , LVS is done by comaring the schematic netlist and the layout netlist
        Opensource tool i.e. netgen is for doing LVS and can understand ssimulatable formats like VerilogRTL and SPICE.
        Schematics are made in Xschem with the components.
@@ -261,13 +261,13 @@ Physical Verification using skywater 130nm
          
          To get the full parasitic extraction, we can use the following command:
 
-         ```
+          ```
           ext2sim labels on 
           ext2sim
           extresist tolerance 10
-           extresist all
-           ext2spice cthresh 0.01 
-           ext2spice extresist on
+          extresist all
+          ext2spice cthresh 0.01 
+          ext2spice extresist on
            
            ```
            The following results were obtained:
