@@ -32,7 +32,7 @@ Physical Verification using skywater 130nm
         -  [Day 5 -LAYOUT VERSUS SCHEMATIC ](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Day-5-LAYOUT-VERSUS-SCHEMATIC)
       
            - [Part 1- Part 1- Installation](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-1-Installation)
-           - [Part 2- Introduction-Fundamentals of LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-2-Introduction-Fundamentals-of-LVS)
+           - [Part 2- Introduction to Fundamentals of LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-2-Introduction-to-Fundamentals-of-LVS)
            - [Part 3-LVS with subcircuits and blackboxes](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-3-LVS-with-subcircuits-and-blackboxes)
            - [Part 4-LVS with Analog block](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-4-LVS-with-Analog-block)
       
@@ -68,8 +68,6 @@ Physical Verification using skywater 130nm
     ## Part 1:Introduction to open-source magic,xschem,netgen
      First, we created the folder of the each tool using mkdir and then linking folder to pdk  i.e skywater pdk
       ![l1_intro](https://user-images.githubusercontent.com/92054999/195911776-3ae6610e-ea51-4ada-b2ed-c3627c744726.PNG)
-     
-     
      Linking from pdk was done using the command ln -s as shown below:
       ![l2](https://user-images.githubusercontent.com/92054999/195911999-78927434-40c9-46a6-aea3-2c5ffb276175.PNG)
       
@@ -202,7 +200,7 @@ Physical Verification using skywater 130nm
 
     ## Part 2- Metal Layer rule
      The file from the pdk was Installed at the specific folder,which is mentioned below:
-       ![d3_l1_cloning](https://user-images.githubusercontent.com/92054999/195972090-f9a2a739-45ca-46ab-9750-24634da562c7.PN
+       ![d3_l1_cloning](https://user-images.githubusercontent.com/92054999/195972090-f9a2a739-45ca-46ab-9750-24634da562c7.PNG)
 
      Wide-spacing rule
       If one piece of the structure is wider than a given width, other wires of any width must be spaced apart at a greater distance.
@@ -219,17 +217,12 @@ Physical Verification using skywater 130nm
         ![d3_l9](https://user-images.githubusercontent.com/92054999/195973450-63db2c12-b096-439c-aec3-a819e07e9893.PNG)
         
      ## Part 2- DEVICE RULE
-     
-        Resistors
-         Resistors can be made out of diffusion layers, polysilicon layers or p-well regions deep inside n-wells.
-         
-        Capacitors
-         There are different types i.e Varactor, MOSCAP, MiM and Vertical Parallel plate (VPP) or MoM.  MiM is mostly used and  has a very high capacitance.
-          Note:Aspect ratio regulations, bottom and top layer regulations, and antenna regulations are all applicable to MiMs.
-          
-        Diodes
-         Diodes can be formed by a well and a diffusion layer.
-         ![d3_I10](https://user-images.githubusercontent.com/92054999/195974863-91b690d0-103a-4f19-8c61-c9c110c1560b.PNG)
+     Resistance,capacitance and diode:Resistors can be made out of diffusion layers, polysilicon layers or p-well regions deep inside n-wells.
+     Capacitor: There are different types i.e Varactor, MOSCAP, MiM and Vertical Parallel plate (VPP) or MoM.  MiM is mostly used and  has a very high capacitance.
+     Note:Aspect ratio regulations, bottom and top layer regulations, and antenna regulations are all applicable to MiMs.
+     Diodes: Diodes can be formed by a well and a diffusion layer.
+         ![d3_I10](https://user-images.githubusercontent.com/92054999/195996753-df64fd75-4371-4ec5-82bd-b94955d93ef5.PNG)
+
          
      ## Part 3- LATCH UP RULE
      Latch-up rules :due to parasitic bipolar transistor formed between taps, wells and substrate - the rules will generate minim distance between tap connection and                        any diffusion zone.
@@ -240,19 +233,14 @@ Physical Verification using skywater 130nm
          ![d3_I14_density](https://user-images.githubusercontent.com/92054999/195979486-a1562c0e-8cb2-4c93-ae1d-a0ea37513296.PNG) 
          ![d3_I13_densityres](https://user-images.githubusercontent.com/92054999/195979498-9c9188a5-2871-4d74-8c2f-8064a2a5467b.PNG)
         
-    #  Day 5: LAYOUT VERSUS SCHEMATIC
+    #  Day 5- LAYOUT VERSUS SCHEMATIC
      On the last day, we analyzed about the LVS step,which is followed before tapeout to verify the circuit.
       
      ## Part 1- Installation
-      To verify the LVS , we have installed the PDK to a specified folder.
-         ![d5_l1_starting_gitclone](https://user-images.githubusercontent.com/92054999/195980403-13293ee1-83ff-47cd-bb0a-77aa25eca79e.PNG)
+          ![d5_l11_analog](https://user-images.githubusercontent.com/92054999/195997673-8e5f2bcc-43cf-4249-a121-50d90cbb8df9.PNG)
          
-     ## Part 2- Introduction-Fundamentals of LVS
-      The designer does both LVS and DRC before tapeout and the netlists produced by each of the processes is compared with each other and matched. After tapeout,     its  send to the foundry, where it does DRC again before final processes.
-      Basically , LVS is done by comaring the schematic netlist and the layout netlist.Opensource tool i.e. netgen is for doing LVS and can understand ssimulatable formats like VerilogRTL and SPICE. Schematics are made in Xschem with the components.
-
-      
-       The following results were obtained:
+     ## Part 2- Introduction to Fundamentals of LVS
+      The designer does both LVS and DRC before tapeout and the netlists produced by each of the processes is compared with each other and matched. After tapeout,     its  send to the foundry, where it does DRC again before final processes.Basically , LVS is done by comaring the schematic netlist and the layout netlist.Opensource tool i.e. netgen is for doing LVS and can understand ssimulatable formats like VerilogRTL and SPICE. Schematics are made in Xschem with the components.The following results were obtained:
           ![D5_l2_result_lvs](https://user-images.githubusercontent.com/92054999/195981288-76b6ad57-a42e-4f38-827a-f123c73fef3a.PNG)
            
      ## Part 3-LVS with subcircuits and blackboxes
@@ -263,5 +251,5 @@ Physical Verification using skywater 130nm
      ## Part 4-LVS with Analog block
       Power-On Reset- Every time power is applied to a certain electrical device, a power-on-reset circuit generates resetting signals.By doing so, you can           identify a known state in which the device always turns on or activates.
           ![d5_l11_analog](https://user-images.githubusercontent.com/92054999/195986957-da03ca81-cc5d-46f7-b233-be488fc20f38.PNG)
-       The block on which LVS is being performed i.e. small analog block
+      The block on which LVS is being performed i.e. small analog block
           ![d5_l12](https://user-images.githubusercontent.com/92054999/195986966-37eef5e7-7dfc-4d53-9df1-b60a71b05edb.PNG)
