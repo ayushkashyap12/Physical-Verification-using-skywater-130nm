@@ -244,7 +244,7 @@ Physical Verification using skywater 130nm
      ## Part 1- Installation
      
       To verify the LVS , we have installed the PDK to a specified folder.
-       ![d5_l1_starting_gitclone](https://user-images.githubusercontent.com/92054999/195980403-13293ee1-83ff-47cd-bb0a-77aa25eca79e.PNG)
+         ![d5_l1_starting_gitclone](https://user-images.githubusercontent.com/92054999/195980403-13293ee1-83ff-47cd-bb0a-77aa25eca79e.PNG)
          
      ## Part 2- Introduction-Fundamentals of LVS
      
