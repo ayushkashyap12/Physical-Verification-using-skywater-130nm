@@ -230,12 +230,12 @@ Physical Verification using skywater 130nm
          
      ## Part 3- LATCH UP RULE
      Latch-up rules :due to parasitic bipolar transistor formed between taps, wells and substrate - the rules will generate minim distance between tap connection and                        any diffusion zone.
-     ![d3_i12_latchup](https://user-images.githubusercontent.com/92054999/195979446-210342cf-a096-456d-99b7-71b4e63fde25.PNG)
+         ![d3_i12_latchup](https://user-images.githubusercontent.com/92054999/195979446-210342cf-a096-456d-99b7-71b4e63fde25.PNG)
 
      ## Part 4- DENSITY RULE CHECK
      To reduce bumpiness of the surface after oxide growth and polishing, we place metal layers and in between them add some 'fill metals', so the surface after polishing is evenly smooth.
-        ![d3_I14_density](https://user-images.githubusercontent.com/92054999/195979486-a1562c0e-8cb2-4c93-ae1d-a0ea37513296.PNG) 
-        ![d3_I13_densityres](https://user-images.githubusercontent.com/92054999/195979498-9c9188a5-2871-4d74-8c2f-8064a2a5467b.PNG)
+         ![d3_I14_density](https://user-images.githubusercontent.com/92054999/195979486-a1562c0e-8cb2-4c93-ae1d-a0ea37513296.PNG) 
+         ![d3_I13_densityres](https://user-images.githubusercontent.com/92054999/195979498-9c9188a5-2871-4d74-8c2f-8064a2a5467b.PNG)
         
      #  Day 5: LAYOUT VERSUS SCHEMATIC
       On the last day, we analyzed about the LVS step,which is followed before tapeout to verify the circuit.
@@ -282,6 +282,6 @@ Physical Verification using skywater 130nm
                 
      ## Part 3-LVS with Analog block
           Power-On Reset- Every time power is applied to a certain electrical device, a power-on-reset circuit generates resetting signals. By doing so, you can                    identify a known state in which the device always turns on or activates.
-                ![d5_l11_analog](https://user-images.githubusercontent.com/92054999/195986957-da03ca81-cc5d-46f7-b233-be488fc20f38.PNG)
+            ![d5_l11_analog](https://user-images.githubusercontent.com/92054999/195986957-da03ca81-cc5d-46f7-b233-be488fc20f38.PNG)
             The block on which LVS is being performed i.e. small analog block
-                ![d5_l12](https://user-images.githubusercontent.com/92054999/195986966-37eef5e7-7dfc-4d53-9df1-b60a71b05edb.PNG)
+            ![d5_l12](https://user-images.githubusercontent.com/92054999/195986966-37eef5e7-7dfc-4d53-9df1-b60a71b05edb.PNG)
