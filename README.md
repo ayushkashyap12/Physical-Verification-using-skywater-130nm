@@ -35,7 +35,7 @@ Physical Verification using skywater 130nm
            - [Part 2- Introduction to Fundamentals of LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-2-Introduction-to-Fundamentals-of-LVS)
            - [Part 3-LVS with subcircuits and blackboxes](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-3-LVS-with-subcircuits-and-blackboxes)
            - [Part 4-LVS with Analog block](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-4-LVS-with-Analog-block)
-      
+           - [Part 5-LVS with Digital pll](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-5-LVS-with-Digital-pll)
       
       
       
@@ -267,7 +267,7 @@ Physical Verification using skywater 130nm
           ![d5_l12](https://user-images.githubusercontent.com/92054999/195986966-37eef5e7-7dfc-4d53-9df1-b60a71b05edb.PNG) 
      The schematic under the block is shown below
           ![d5_i14](https://user-images.githubusercontent.com/92054999/195998856-f9d62011-7717-4c43-82cf-3fb439c3ec0c.PNG)
-    ## Part 4-LVS with Digital pll
+    ## Part 5-LVS with Digital pll
    The digital pll layout was extracted on the magic tool for LVS.The figure below 
           ![d5_l16_standcell](https://user-images.githubusercontent.com/92054999/195999350-55f8be7b-5118-4928-81c9-ed38d031492f.PNG)
           
