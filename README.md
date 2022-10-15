@@ -238,10 +238,12 @@ Physical Verification using skywater 130nm
          ![d3_I13_densityres](https://user-images.githubusercontent.com/92054999/195979498-9c9188a5-2871-4d74-8c2f-8064a2a5467b.PNG)
         
      #  Day 5: LAYOUT VERSUS SCHEMATIC
+     
       On the last day, we analyzed about the LVS step,which is followed before tapeout to verify the circuit.
       
      ## Part 1- Installation
-        To verify the LVS , we have installed the PDK to a specified folder.
+     
+        - To verify the LVS , we have installed the PDK to a specified folder.
          ![d5_l1_starting_gitclone](https://user-images.githubusercontent.com/92054999/195980403-13293ee1-83ff-47cd-bb0a-77aa25eca79e.PNG)
          
      ## Part 2- Introduction-Fundamentals of LVS
@@ -274,6 +276,7 @@ Physical Verification using skywater 130nm
            ```
            - The following results were obtained:
            ![D5_l2_result_lvs](https://user-images.githubusercontent.com/92054999/195981288-76b6ad57-a42e-4f38-827a-f123c73fef3a.PNG)
+           
      ## Part 2-LVS with subcircuits and blackboxes
      
            - To overcome writing lengthy command every time, we can actually create a bash script for the same
@@ -281,7 +284,8 @@ Physical Verification using skywater 130nm
                 ![d5_l5_splowlevel](https://user-images.githubusercontent.com/92054999/195981524-3099d2eb-9568-4271-947d-cc2647353c44.PNG)
                 
      ## Part 3-LVS with Analog block
-          Power-On Reset- Every time power is applied to a certain electrical device, a power-on-reset circuit generates resetting signals. By doing so, you can                    identify a known state in which the device always turns on or activates.
+     
+           - Power-On Reset- Every time power is applied to a certain electrical device, a power-on-reset circuit generates resetting signals. By doing so, you can                    identify a known state in which the device always turns on or activates.
             ![d5_l11_analog](https://user-images.githubusercontent.com/92054999/195986957-da03ca81-cc5d-46f7-b233-be488fc20f38.PNG)
             The block on which LVS is being performed i.e. small analog block
             ![d5_l12](https://user-images.githubusercontent.com/92054999/195986966-37eef5e7-7dfc-4d53-9df1-b60a71b05edb.PNG)
