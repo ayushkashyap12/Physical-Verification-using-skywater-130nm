@@ -214,11 +214,14 @@ Physical Verification using skywater 130nm
         ![d3_l9](https://user-images.githubusercontent.com/92054999/195973450-63db2c12-b096-439c-aec3-a819e07e9893.PNG)
         
      ## Part 3- DEVICE RULE
+     
         Resistors
          Resistors can be made out of diffusion layers, polysilicon layers or p-well regions deep inside n-wells.
+         
         Capacitors
          There are different types i.e Varactor, MOSCAP, MiM and Vertical Parallel plate (VPP) or MoM.  MiM is mostly used and  has a very high capacitance.
           Note:Aspect ratio regulations, bottom and top layer regulations, and antenna regulations are all applicable to MiMs
+          
         Diodes
          Diodes can be formed by a well and a diffusion layer.
          ![d3_I10](https://user-images.githubusercontent.com/92054999/195974863-91b690d0-103a-4f19-8c61-c9c110c1560b.PNG)
