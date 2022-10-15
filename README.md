@@ -31,7 +31,10 @@ Physical Verification using skywater 130nm
       
         -  [Day 5 -LAYOUT VERSUS SCHEMATIC ](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Day-5-LAYOUT-VERSUS-SCHEMATIC)
       
-      
+           - [Part 1- Part 1- Installation](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-1-Installation)
+           - [Part 2- Introduction-Fundamentals of LVS](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-2- Introduction-Fundamentals-of-LVS)
+           - [Part 3-LVS with subcircuits and blackboxes](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-3-LVS-with-subcircuits-and-blackboxes)
+           - [Part 4-LVS with Analog block](https://github.com/ayushkashyap12/Physical-Verification-using-skywater-130nm/edit/main/README.md#Part-4-LVS-with-Analog-block)
       
       
       
